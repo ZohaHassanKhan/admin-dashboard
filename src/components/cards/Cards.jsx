@@ -3,8 +3,8 @@ import ReactApexChart from "react-apexcharts";
 import "./cards.css";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import Common from "../../common/Common";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 const Cards = () => {
   const data = {
@@ -69,44 +69,46 @@ const Cards = () => {
     );
   };
 
-
-
-
-
-
-
+  const handleNextReading = () => {};
   return (
     <>
       <section className="cards grid">
-        <div className="cardBox" >
+        <div className="cardBox">
           <Common title="Acceleration X-axis" />
           <div className="circle">
             <div className="row">
-              {/* <ReactApexChart
+              {
+                /* <ReactApexChart
                 options={data.options}
                 series={data.series}
                 type="radialBar"
                 height={150}
               /> */
-              <>
-              <h1 style={{color:'#E9B251', textAlign:'center', fontSize:'50px', paddingLeft:'28px'}}>92.5</h1>
-              <FontAwesomeIcon 
-              icon={faCaretDown} 
-              style={{
-                color: "#E9B251",
-                fontSize: "30px",
-                marginLeft: "10px",
-                cursor: "pointer"
-              }}
-              onClick={handleNextReading}
-            />
-              </>
+                <>
+                  <h1
+                    style={{
+                      color: "#E9B251",
+                      textAlign: "center",
+                      fontSize: "50px",
+                      paddingLeft: "28px",
+                    }}
+                  >
+                    92.5
+                  </h1>
+                  <FontAwesomeIcon
+                    icon={faCaretDown}
+                    style={{
+                      color: "#E9B251",
+                      fontSize: "30px",
+                      marginLeft: "10px",
+                      cursor: "pointer",
+                    }}
+                    onClick={handleNextReading}
+                  />
+                </>
               }
             </div>
-            <div className="title row">
-             
-              {/* <p>Current Reading</p> */}
-            </div>
+            <div className="title row">{/* <p>Current Reading</p> */}</div>
           </div>
         </div>
         <div className="cardBox">
